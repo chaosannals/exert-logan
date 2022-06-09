@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  logan-server:
+    container_name: logan-server
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps
+      - ./conf:/usr/local/tomcat/conf
+      - ./applogs:/data/applogs
+    ports:
+      - 39181:39181

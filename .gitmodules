@@ -1,0 +1,3 @@
+[submodule "logan"]
+	path = logan
+	url = git@github.com:Meituan-Dianping/Logan.git
