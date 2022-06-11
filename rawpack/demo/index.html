@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logan Web Demo</title>
+</head>
+
+<body>
+    <button id="btn">Log</button>
+    <script type="text/javascript" src="/dist/logan.js"></script>
+    <script>
+        console.log($logan);
+        $logan.initLogan();
+        document.getElementById('btn').addEventListener('click', () => {
+            $logan.log('aaaaaaadsfsdfdsfsdfsd');
+            $logan.report({
+                aaaa: 12312,
+                bbbb: 32213123,
+            }, 'http://127.0.0.1:39181/logan/web/upload.json')
+        })
+    </script>
+</body>
+
+</html>

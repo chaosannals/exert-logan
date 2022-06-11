@@ -4,11 +4,19 @@
   "description": "raw logan web sdk pack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [
     "logan"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "logan-web": "^1.1.0"
+  },
+  "devDependencies": {
+    "serialize-javascript": "^6.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
